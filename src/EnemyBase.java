@@ -1,5 +1,5 @@
 
-public class EnemyBase extends Enemy{
+public class EnemyBase extends Enemy {
 
 	public EnemyBase(double x, double y, double vx, double vy) {
 		super(x, y, vx, vy);
@@ -21,6 +21,12 @@ public class EnemyBase extends Enemy{
 		}
 		if(Math.random()<0.05) {
 			GameWorld.enemies.add(new RandomEnemy(x,y,0,1));
+		}
+		if(Math.random()<0.05) {
+			GameWorld.enemies.add(new DropEnemy(x,y,0,3));
+		}
+		if(Math.random()<0.05) {
+			GameWorld.enemies.add(new CurveEnemy(x,y,0,4));
 		}
 	}
 

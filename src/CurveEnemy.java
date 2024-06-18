@@ -5,6 +5,14 @@ public class CurveEnemy extends Enemy{
 		super(x, y, vx, vy);
 		// TODO 自動生成されたコンストラクター・スタブ
 	}
+	
+	public void draw(MyFrame f) {
+		 f.setColor(0, 0, 0); 
+		 f.fillOval(x, y, 30, 30);
+		 f.setColor(255, 255, 255);
+		 f.fillOval(x+5, y, 20, 30);
+	}
+	
 	public void move() {
 		super.move();
 		if(x<GameWorld.player.x) {
