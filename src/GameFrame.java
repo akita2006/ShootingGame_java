@@ -12,7 +12,8 @@ public class GameFrame extends MyFrame{
 				GameWorld.player.y=300;
 				GameWorld.playerBullets=new Vector<PlayerBullet>();	
 				GameWorld.enemies=new Vector<Enemy>();
-				GameWorld.enemies.add (new EnemyBase(100,50,GameWorld.stage,0));	
+				GameWorld.enemies.add (new EnemyBase(100,50,GameWorld.stage,0));
+				
 				GameWorld.enterPressed=false;
 				while(true) {
 					clear();
@@ -29,6 +30,7 @@ public class GameFrame extends MyFrame{
 						drawString("クリア",100,200,40);
 						if(GameWorld.enterPressed) {
 							GameWorld.stage++;
+							
 							break;
 						}
 					}else if(GameWorld.player.y<0) {
