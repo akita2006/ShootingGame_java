@@ -5,6 +5,7 @@ public class EnemyBase extends Enemy {
 		super(x, y, vx, vy);
 		// TODO 自動生成されたコンストラクター・スタブ
 		life=20;
+		score=10;
 	}
 	public void draw(MyFrame f) {
 		 f.setColor(0, 128, 0); 
